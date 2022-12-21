@@ -1,0 +1,158 @@
+
+*{
+   
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family:  Helvetica, sans-serif,Arial;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    /* max-width: 1243px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.main-container{
+    width: 100%;
+    max-width: 1242px;
+    margin: 0 auto;
+}
+
+header{
+    background: transparent;
+    padding: 10px 80px;
+    /* border: 1px solid red; */
+}
+.left-cont, .right-cont{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.left-cont .logo-img{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.main-nav .nav-item{
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Movies Section */
+.movies-section{
+
+}
+.movies-section-heading{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.explore-nudge{
+    font-size: 12px;
+    font-weight: 600;
+    display: none;
+    color: teal;
+}
+.movies-section-heading:hover .explore-nudge{
+    display: inline-block;
+    /* transition: all 0.3s ease; */
+}
+.movies-row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+.movies-item{
+    border-radius: 4px;
+width: 245px;
+object-fit: contain;
+}
+.movies-item:hover{
+    transform: scale(1.2);
+    transition: transform ease 300ms;
+}
+
+
+
+/* Banner Section */
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
+.banner_title{
+    font-size: 78px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+.banner_info{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+.banner_overview{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.3;
+}
+.banner-action-btn{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.action{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #fff;
+    padding: 8px 21px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+
+
+
+
+/* RESPONSIVE CSS */
+@media(max-width:767px) {
+    .main-nav{
+        display: none;
+    }
+}
